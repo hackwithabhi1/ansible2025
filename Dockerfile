@@ -1,5 +1,8 @@
-from httpd
+from nginx
 run apt-get update -y
 run apt-get install wget unzip git -y
-run git clone https://github.com/hackwithabhi1/painter.git
-run cp -rvf painter/* /usr/local/apache2/htdocs/
+run git clone https://github.com/hackwithabhi1/aria.git
+run rm -rvf /usr/share/nginx/html/*
+run cp -rvf aria/* /usr/share/nginx/html/
+run -rvf aria
+
